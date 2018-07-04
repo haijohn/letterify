@@ -14,7 +14,7 @@ with open(filepath, 'rb') as f:
     r = requests.post(url, files=files)
 res = r.json
 print(res)
-key = res.['key']
+key = res['key']
 # query results
 url = 'http://localhost:5000/' + key
 res = requests.get(url)

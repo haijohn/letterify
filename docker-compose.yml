@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  db:
+    image: redis
+  web:
+    image: letterify
+    command: python app.py
+    volumes:
+      - .:/code
+    ports:
+      - "5000:5000"

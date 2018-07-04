@@ -20,7 +20,7 @@ RUN apt-get install -y --no-install-recommends tesseract-ocr
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt -i https://pypi.douban.com/simple/
 
-
+RUN mkdir /code
 WORKDIR /code
 
 EXPOSE 80

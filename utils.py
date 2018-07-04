@@ -30,3 +30,9 @@ def get_md5(fname):
         for chunk in iter(lambda: f.read(4096), b""):
             hash_md5.update(chunk)
     return hash_md5.hexdigest()
+
+
+def is_image_file(filename):
+    """check filename suffix, if it's an image"""
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ['jpg', 'jpeg', 'png']

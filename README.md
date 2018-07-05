@@ -25,9 +25,9 @@ res = r.json()
 
 ```json
 {
-  "key": "1b0d36dc234a996fdb55b457d084fb23", # md5 of the file
-  "letters": ["i", "m", "a", "g", "e", "s"], # extract letters
-  "query_url": "http://localhost:5000/1b0d36dc234a996fdb55b457d084fb23" # for further query
+  "key": "1b0d36dc234a996fdb55b457d084fb23", // md5 of the file
+  "letters": ["i", "m", "a", "g", "e", "s"], // extract letters
+  "query_url": "http://localhost:5000/1b0d36dc234a996fdb55b457d084fb23" // for further query
 }
 ```
 

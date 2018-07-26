@@ -1,9 +1,14 @@
 pipeline {
-  agent any
+  agent {
+    dockerfile {
+      filename 'Dockerfile'
+    }
+
+  }
   stages {
-    stage('build') {
+    stage('ininilize') {
       steps {
-        echo 'build'
+        echo 'initialize pipline'
       }
     }
   }
